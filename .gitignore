@@ -1,5 +1,12 @@
+# Python
 venv/
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
+
+# Frontend
+node_modules/
+dist/
+
+# General
 .env
+.ipynb_checkpoints/
