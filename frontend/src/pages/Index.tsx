@@ -25,12 +25,14 @@ const Index = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-foreground">HeartGuard</h1>
-                <p className="text-xs text-muted-foreground">AI-Powered Heart Disease Prediction</p>
+                <p className="text-xs text-muted-foreground">
+                  Machine Learning–Based Heart Disease Risk Assessment
+                </p>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-2 text-sm text-muted-foreground">
               <Shield className="h-4 w-4" />
-              <span>HIPAA Compliant</span>
+              <span>Privacy-focused design</span>
             </div>
           </div>
         </div>
@@ -43,14 +45,19 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
               <Activity className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Advanced ML Prediction Model</span>
+              <span className="text-sm font-medium text-primary">
+                Trained Machine Learning Classification Model
+              </span>
             </div>
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Predict Heart Disease Risk with{" "}
-              <span className="text-primary">AI Precision</span>
+              <span className="text-primary">Data-Driven Insights</span>
             </h1>
+
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Enter patient clinical data to receive an instant risk assessment powered by machine learning algorithms trained on extensive cardiovascular datasets.
+              Enter standard clinical parameters to receive an instant heart disease
+              risk assessment using a trained machine learning model.
             </p>
           </div>
         </div>
@@ -65,26 +72,34 @@ const Index = () => {
                 <Activity className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Real-time Analysis</h3>
-                <p className="text-sm text-muted-foreground">Instant predictions in seconds</p>
+                <h3 className="font-semibold text-foreground">Real-time Prediction</h3>
+                <p className="text-sm text-muted-foreground">
+                  Model inference completed within seconds
+                </p>
               </div>
             </div>
+
             <div className="flex items-center gap-4">
               <div className="p-3 rounded-xl bg-primary/10">
                 <Stethoscope className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Clinical Accuracy</h3>
-                <p className="text-sm text-muted-foreground">Based on validated datasets</p>
+                <h3 className="font-semibold text-foreground">Clinically Relevant Features</h3>
+                <p className="text-sm text-muted-foreground">
+                  Based on validated cardiovascular datasets
+                </p>
               </div>
             </div>
+
             <div className="flex items-center gap-4">
               <div className="p-3 rounded-xl bg-primary/10">
                 <Shield className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Secure & Private</h3>
-                <p className="text-sm text-muted-foreground">Data never stored on servers</p>
+                <h3 className="font-semibold text-foreground">Privacy-Focused</h3>
+                <p className="text-sm text-muted-foreground">
+                  No patient data is stored or logged
+                </p>
               </div>
             </div>
           </div>
@@ -95,7 +110,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-8">
           <PredictionForm onResult={setResult} />
-          
+
           {result && (
             <div className="mt-8">
               <PredictionResult result={result} />
@@ -109,9 +124,11 @@ const Index = () => {
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Medical Disclaimer:</strong> This tool is for educational and informational purposes only. 
-              It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. 
-              Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
+              <strong className="text-foreground">Medical Disclaimer:</strong> This
+              application is intended for educational and research purposes only.
+              The predictions generated by this system should not be interpreted as
+              medical advice or a clinical diagnosis. Always consult a qualified
+              healthcare professional for medical decisions.
             </p>
           </div>
         </div>
@@ -126,7 +143,7 @@ const Index = () => {
               <span className="font-semibold text-foreground">HeartGuard</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} HeartGuard. Built with care for better health outcomes.
+              © {new Date().getFullYear()} HeartGuard. Academic Machine Learning Project.
             </p>
           </div>
         </div>
